@@ -1,72 +1,99 @@
-
-.contact-section {
-    background: #f8f9fa; /* Light background color */
+/* General Section Styles */
+.contact-section,
+.availability-section {
+    background-color: #f8f9fa;
     padding: 40px 0;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
+/* Contact Section */
 .contact-section h2 {
     margin-bottom: 20px;
-    color: #343a40; /* Darker color for better contrast */
+    color: #343a40;
 }
-.contact-form .form-control {
-    border-radius: 20px; /* Rounded corners for input fields */
-    box-shadow: none; /* Remove default input shadow */
-}
+
+.contact-form .form-control,
 .contact-form .btn {
-    border-radius: 20px; /* Rounded button */
-    background-color: #007bff; /* Primary button color */
+    border-radius: 20px;
+}
+
+.contact-form .btn {
+    background-color: #007bff;
     border: none;
     transition: background-color 0.3s;
-    width: 120px; /* Fixed width for the button */
+    width: 120px;
 }
+
 .contact-form .btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
 }
 
-/* Styling for the additional "We are available 24 by 7" section */
-.availability-section {
-    background-color: #f8f9fa;
-    padding: 40px 0;
-}
-
+/* Availability Section */
 .availability-section h3 {
     font-weight: bold;
     color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.availability-item {
+    font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.availability-item i {
-    font-size: 36px;
-    color: #007bff;
-    margin-bottom: 10px;
+.line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #007bff, #00c3ff);
+    margin: 0 auto 30px;
+    border-radius: 2px;
 }
 
-.availability-item p {
+.availability-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.availability-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.availability-box:hover {
+    transform: translateY(-10px);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #add8e6; /* Light blue */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    color: #007bff;
+    font-size: 28px;
+}
+
+.availability-box p {
+    margin: 0;
+    color: #666;
     font-size: 16px;
-    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .map-container {
+        margin-top: 20px;
+    }
 }
 
 .line {
-    width: 60%; /* Adjust the width as needed */
-    height: 4px; /* Height of the line */
-    background: linear-gradient(to right, #007bff, #00c3ff); /* Gradient color */
-    margin: 20px auto; /* Centering the line */
-    border-radius: 5px; /* Rounded edges */
-}
-
-.map-container {
-    margin-top: 20px; /* Add margin above the map */
-}
-
-@media (max-width: 767px) {
-    .map-container {
-        margin-top: 20px; /* Ensure space on smaller screens */
-    }
+    width: 100%; /* Set to 100% to cover full width of the container */
+    height: 2px; /* Set the height of the line */
+    background-color: #000; /* Change the color to match your design */
+    margin: 20px 0; /* Adjust top and bottom margins as needed */
 }

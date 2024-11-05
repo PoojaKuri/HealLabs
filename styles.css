@@ -5,22 +5,17 @@ body, html {
     color: #333;
     margin: 0;
     height: 100%;
-    scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
-}
-
-html {
     scroll-behavior: smooth;
 }
-
 
 /* Navbar */
 .navbar {
     background-color: rgba(128, 184, 244, 0.7);
     position: fixed;
     width: 100%;
-    z-index: 1100; /* Higher z-index for overlap with announcement bar */
+    z-index: 1100;
     padding: 15px 30px;
     margin-top: 40px;
 }
@@ -31,7 +26,6 @@ html {
     top: 50%;
     left: 25px;
     transform: translateY(-50%) scale(1.5);
-    width: auto;
 }
 
 .navbar .nav-link {
@@ -297,17 +291,14 @@ section.show {
 
 .whatsapp-icon {
     background-color: #3b5998;
-    border: 1px solid black;
 }
 
 .instagram-icon {
     background-color: #3a7bd5;
-    border: 1px solid black;
 }
 
 .email-icon {
     background-color: #1e5799;
-    border: 1px solid black;
 }
 
 /* Keyframes for Animations */
@@ -348,3 +339,4 @@ section.show {
         max-width: 80%;
     }
 }
+

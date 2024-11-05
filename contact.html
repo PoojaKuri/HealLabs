@@ -15,26 +15,48 @@
 </head>
 <body>
 
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Main: example@gmail.com | Phone: 123455</p>
+    </div>
+
+
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#home">
             <img src="images/logo.png" alt="Heal Labs Logo" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto link-color">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+
     <main>
+        <!-- Contact Sidebar -->
+        <div class="contact-sidebar">
+            <a href="https://wa.me/yourphonenumber" target="_blank" class="contact-icon whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="contact-icon instagram-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:your-email@example.com" class="contact-icon email-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
         <section class="contact-section py-5 show">
             <div class="container">
-                <h2 class="text-center">Contact Us</h2>
+                <h2 class="text-center" style="margin-top: 18px;">Contact Us</h2>
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>

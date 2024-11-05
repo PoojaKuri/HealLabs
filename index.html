@@ -11,8 +11,14 @@
 </head>
 <body>
 
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Main: example@gmail.com | Phone: 123455</p>
+    </div>
+
+
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <a class="navbar-brand" href="#home">
             <img src="images/logo.png" alt="Heal Labs Logo" height="70">
         </a>
@@ -20,7 +26,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto link-color">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
@@ -30,6 +36,19 @@
     </nav>
 
     <main>
+        <!-- Contact Sidebar -->
+        <div class="contact-sidebar">
+            <a href="https://wa.me/yourphonenumber" target="_blank" class="contact-icon whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="contact-icon instagram-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:your-email@example.com" class="contact-icon email-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
         <!-- Hero Section with Carousel -->
         <header id="home" class="hero banner text-white text-center py-5">
             <div class="container">
@@ -81,9 +100,7 @@
             </div>
         </section>
         
-        
-        
-        
+  
         <!-- Our Products Section -->
         <section class="our-products py-5" id="products">
             <div class="container">

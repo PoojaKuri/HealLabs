@@ -51,3 +51,22 @@ $(document).ready(function () {
         $('.hero.banner').css('background-image', 'url(' + nextBackground + ')');
     });
 });
+
+function toggleDescription(button) {
+    const description = button.parentElement.querySelector('.product-description');
+    if (description.style.display === 'flex') {
+        description.style.display = 'none';
+        button.textContent = 'Description';
+    } else {
+        description.style.display = 'flex';
+        button.textContent = 'Hide Description';
+    }
+}
+
+
+function showDescription(id) {
+    document.getElementById(id).style.display = 'flex';
+}
+function hideDescription(id) {
+    document.getElementById(id).style.display = 'none';
+}

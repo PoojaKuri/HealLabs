@@ -23,3 +23,50 @@
 .contact-form .btn:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
+
+/* Styling for the additional "We are available 24 by 7" section */
+.availability-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.availability-section h3 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.availability-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.availability-item i {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.availability-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.line {
+    width: 60%; /* Adjust the width as needed */
+    height: 4px; /* Height of the line */
+    background: linear-gradient(to right, #007bff, #00c3ff); /* Gradient color */
+    margin: 20px auto; /* Centering the line */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.map-container {
+    margin-top: 20px; /* Add margin above the map */
+}
+
+@media (max-width: 767px) {
+    .map-container {
+        margin-top: 20px; /* Ensure space on smaller screens */
+    }
+}

@@ -1,0 +1,25 @@
+
+.contact-section {
+    background: #f8f9fa; /* Light background color */
+    padding: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.contact-section h2 {
+    margin-bottom: 20px;
+    color: #343a40; /* Darker color for better contrast */
+}
+.contact-form .form-control {
+    border-radius: 20px; /* Rounded corners for input fields */
+    box-shadow: none; /* Remove default input shadow */
+}
+.contact-form .btn {
+    border-radius: 20px; /* Rounded button */
+    background-color: #007bff; /* Primary button color */
+    border: none;
+    transition: background-color 0.3s;
+    width: 120px; /* Fixed width for the button */
+}
+.contact-form .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

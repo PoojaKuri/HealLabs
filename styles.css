@@ -107,13 +107,13 @@ h2 {
 
 /* Button Styles */
 .btn-primary {
-    background-color: #e60000;
-    border-color: #e60000;
+    background-color: #496e94;
+    border-color: #000000;
     transition: transform 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #b30000;
+    background-color: #0a9eef;
     transform: scale(1.05);
 }
 

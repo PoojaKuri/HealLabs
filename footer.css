@@ -1,0 +1,71 @@
+.footer {
+    background-color: #003366; /* Dark background for footer */
+    padding: 15px 0; /* Adjusted padding */
+}
+
+.heading {
+    font-size: 1.4rem; /* Increased font size */
+    color: #ffd700 !important; /* Dark yellow color for headings */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-bottom: 10px; /* Space below each heading */
+    text-transform: uppercase; /* Uppercase for consistency */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+.footer-info, .footer-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px; /* Padding for a balanced look */
+    margin-bottom: 15px; /* Space between sections */
+}
+
+.footer-info-item {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+    margin-bottom: 0.2rem; /* Space between items */
+}
+
+.footer-info-item i {
+    font-size: 1.2em; /* Icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.footer-info-item span,
+.footer-info p,
+.footer-box p {
+    font-size: 1rem; /* Font size for content */
+    color: #ffffff; /* White color for content text */
+}
+
+.btn-link {
+    color: #ddd; /* Link color */
+    text-decoration: none; /* No underline */
+    margin-bottom: 0.2rem; /* Spacing between links */
+}
+
+.btn-link:hover {
+    color: #fff; /* Color change on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+.btn.btn-square {
+    width: 30px; /* Icon size */
+    height: 30px; /* Icon height */
+    margin: 0 5px 0 0; /* Margin to the right */
+}
+
+.btn-signup {
+    background-color: #ff0000; /* Red background */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Font size */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-signup:hover {
+    background-color: #aa00cc; /* Darker red on hover */
+}

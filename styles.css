@@ -235,7 +235,7 @@ section.show {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: #9fc7f0;
     color: white;
     display: none;
     align-items: center;
@@ -290,15 +290,15 @@ section.show {
 }
 
 .whatsapp-icon {
-    background-color: #3b5998;
-}
-
-.instagram-icon {
     background-color: #3a7bd5;
 }
 
+.instagram-icon {
+    background-color: #3b5998;
+}
+
 .email-icon {
-    background-color: #1e5799;
+    background-color: #3a7bd5;
 }
 
 /* Keyframes for Animations */
@@ -340,3 +340,63 @@ section.show {
     }
 }
 
+/* Page Title Section Styling */
+.page-title-section {
+    background-image: url('images/title-image.jpeg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #060000;
+    text-align: center;
+    padding: 180px 0 100px; /* Increased top padding to account for fixed navbar */
+    margin-top: 62px; /* Compensate for the fixed navbar height */
+    width: 100vw;
+    min-height: 400px;
+    box-sizing: border-box;
+    opacity: 0; /* Start hidden for animation */
+    animation: fadeInZoom 2s ease-out forwards; /* Trigger fade-in and zoom animation */
+}
+
+/* Availability Section */
+.availability-section {
+    padding-top: 20px; /* Reduced to align with title section */
+    margin-top: -40px; /* Reduced margin between sections */
+}
+
+/* Slide-Down Animation for Title Text */
+@keyframes slideDownFromTop {
+    0% {
+        transform: translateY(-100px); /* Start from above */
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(20px); /* Brief bounce effect */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0); /* Final position */
+        opacity: 1;
+    }
+}
+
+/* Fade-In and Zoom Animation for Background */
+@keyframes fadeInZoom {
+    0% {
+        transform: scale(1.1); /* Start slightly zoomed in */
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); /* Settle at normal size */
+        opacity: 1;
+    }
+}
+
+/* Page Title Text Styling */
+.page-title {
+    font-size: 48px;
+    font-weight: bold;
+    opacity: 0; /* Start hidden for animation */
+    animation: slideDownFromTop 1.5s ease-out forwards; /* Trigger animation */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}

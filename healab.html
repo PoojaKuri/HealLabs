@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealLabs</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>mailto: healabsmedicine65@gmail.com | Phone: 9307845862</p>
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#home">
+            <img src="images/logo.png" alt="Heal Labs Logo" height="70">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto link-color">
+                <li class="nav-item"><a class="nav-link" href="healab.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Contact Sidebar -->
+        <div class="contact-sidebar">
+            <a href="https://wa.me/9307845862" target="_blank" class="contact-icon whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" class="contact-icon instagram-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:your-email@example.com" class="contact-icon email-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Hero Section with Carousel -->
+        <header id="home" class="hero banner text-white text-center py-5">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-background="images/banners/banner.jpeg">
+                            <h1 class="display-4 animated-text">Your Health, Our Priority</h1>
+                            <p class="lead animated-text">Delivering innovative pharmaceutical solutions for a better tomorrow.</p>
+                        </div>
+                        <div class="carousel-item" data-background="images/banners/banner2.jpeg">
+                            <h1 class="display-4 animated-text">Innovation in Every Dose</h1>
+                            <p class="lead animated-text">Pioneering research for better healthcare solutions.</p>
+                        </div>
+                        <div class="carousel-item" data-background="images/banners/banner3.jpeg">
+                            <h1 class="display-4 animated-text">Quality You Can Trust</h1>
+                            <p class="lead animated-text">Ensuring the highest standards in pharmaceutical care.</p>
+                        </div>
+                        <div class="carousel-item" data-background="images/banners/banner4.jpeg">
+                            <h1 class="display-4 animated-text">Advancing Healthcare Globally</h1>
+                            <p class="lead animated-text">Dedicated to making a difference worldwide.</p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                
+            </div>
+        </header>
+
+        <section id="about" class="about-us py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img src="images/about.jpeg" alt="About HealLabs" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>About Us</h2>
+                        <p class="about-description">
+                            HealLabs is a trusted medicine distributor based in Bangalore, dedicated to making healthcare accessible and convenient for all. We specialize in delivering a wide range of quality medicines directly to consumers, ensuring that essential healthcare products are always within reach. Whether you need prescriptions or over-the-counter medications, HealLabs offers fast, reliable, and efficient delivery, providing a seamless experience for individuals, families, and healthcare providers. Our commitment is to enhance the well-being of our community by prioritizing health, convenience, and customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+  
+        <!-- Our Products Section -->
+        <section class="our-products py-5" id="products">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Products</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card">
+                            <img src="images/product-images/p17.jpg" alt="Product 18" class="img-fluid">
+                            <h5 class="mt-2">HEALOCEF-100 DRY SYRUP</h5>
+                            <button onclick="showDescription('desc18')" class="btn btn-primary btn-sm mt-2">Description</button>
+                            <div class="product-description" id="desc18">
+                                <button onclick="hideDescription('desc18')" class="close-button">&times;</button>
+                                <p class="small">Full description for ASCOLAB-DX.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 8 -->
+
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card">
+                            <img src="images/product-images/p19.jpg" alt="Product 19" class="img-fluid">
+                            <h5 class="mt-2">HEALOCEF-50 DRY SYRUP</h5>
+                            <button onclick="showDescription('desc19')" class="btn btn-primary btn-sm mt-2">Description</button>
+                            <div class="product-description" id="desc19">
+                                <button onclick="hideDescription('desc19')" class="close-button">&times;</button>
+                                <p class="small">Full description for ASCOLAB-DX.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card">
+                            <img src="images/product-images/p20.jpg" alt="Product 20" class="img-fluid">
+                            <h5 class="mt-2">CEPHOPOD-CV 50 DRY SYRUP</h5>
+                            <button onclick="showDescription('desc20')" class="btn btn-primary btn-sm mt-2">Description</button>
+                            <div class="product-description" id="desc20">
+                                <button onclick="hideDescription('desc20')" class="close-button">&times;</button>
+                                <p class="small">Full description for ASCOLAB-DX.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card">
+                            <img src="images/product-images/p21.jpg" alt="Product 21" class="img-fluid">
+                            <h5 class="mt-2">ASCOLAB-DX</h5>
+                            <button onclick="showDescription('desc21')" class="btn btn-primary btn-sm mt-2">Description</button>
+                            <div class="product-description" id="desc21">
+                                <button onclick="hideDescription('desc21')" class="close-button">&times;</button>
+                                <p class="small">Full description for ASCOLAB-DX.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 9 -->
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card">
+                            <img src="images/product-images/p22.jpg" alt="Product 22" class="img-fluid">
+                            <h5 class="mt-2">GASTROLAB IV INJECTION</h5>
+                            <button onclick="showDescription('desc22')" class="btn btn-primary btn-sm mt-2">Description</button>
+                            <div class="product-description" id="desc22">
+                                <button onclick="hideDescription('desc22')" class="close-button">&times;</button>
+                                <p class="small">Full description for ASCOLAB-DX.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="product-card">
+                            <img src="images/product-images/p23.jpg" alt="Product 23" class="img-fluid">
+                            <h5 class="mt-2">FEBRIHEAL-250 suspension</h5>
+                            <button onclick="showDescription('desc23')" class="btn btn-primary btn-sm mt-2">Description</button>
+                            <div class="product-description" id="desc23">
+                                <button onclick="hideDescription('desc23')" class="close-button">&times;</button>
+                                <p class="small">Full description for ASCOLAB-DX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Products Button -->
+                <div class="text-center mt-4">
+                    <a href="products.html" class="btn btn-primary">More Products</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <p>&copy; 2024 HealLabs. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.youtube.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="mailto:your-email@example.com" class="text-white mx-2">
+                <i class="fas fa-envelope fa-lg"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

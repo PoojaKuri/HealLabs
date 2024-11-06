@@ -38,6 +38,33 @@ body, html {
     color: #0056b3;
 }
 
+
+/* Navbar adjustments for mobile */
+.navbar-brand img {
+    height: 50px; /* Smaller logo for mobile */
+}
+
+/* Ensure navbar links align in the center on mobile */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin-top: 10px; /* Adds some space between links */
+    }
+
+    .nav-item {
+        margin-bottom: 5px; /* Adds a bit of space between items */
+    }
+}
+
+/* Adjusting color for toggler icon */
+.navbar-toggler-icon {
+    background-color: #333; /* Set color for visibility */
+}
+
+
 /* Announcement Bar */
 .announcement-bar {
     background-color: #0d3b67;

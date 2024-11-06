@@ -1,3 +1,17 @@
+.our-products h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    color: #000;
+}
+.custom-btn {
+    background-color: #0d3b67;
+    border-color: lightblue;
+    color: white; /* Adjust the text color if needed for contrast */
+}
+
 /* Hero Section */
 .hero.banner {
     background: url('images/banners/banner.jpeg') no-repeat center center / cover;

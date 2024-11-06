@@ -29,7 +29,7 @@ body, html {
 }
 
 .navbar .nav-link {
-    color: #f54a2c !important;
+    color: #091639 !important;
     font-size: 20px;
     font-weight: bold;
 }
@@ -61,7 +61,7 @@ body, html {
 
 /* Adjusting color for toggler icon */
 .navbar-toggler-icon {
-    background-color: #f70404; /* Set color for visibility */
+    background-color: #091639; /* Set color for visibility */
 }
 
 

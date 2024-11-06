@@ -1,0 +1,35 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-img {
+    max-width: 75%;
+    margin: 0 auto;
+    opacity: 0; /* Start with the image hidden */
+    transform: translateY(20px); /* Move the image down slightly */
+    animation: slideUpFadeIn 1s ease-out forwards; /* Animation */
+}
+
+/* Hover animation */
+.animate-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animate-image:hover {
+    transform: scale(1.05);
+}
+
+/* Keyframes for the initial animation */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

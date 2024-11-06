@@ -1,95 +1,91 @@
-/* Footer Styles */
-.footer {
-    background-color: #003366; /* Dark background for footer */
-    padding: 15px 0; /* Adjusted padding */
+  /* Footer Styles */
+  .footer {
+    background-color: #003366;
+    padding: 15px 0;
 }
 
 .heading {
-    font-size: 1.4rem; /* Increased font size */
-    color: #ffd700 !important; /* Dark yellow color for headings */
-    font-weight: bold; /* Bold text for emphasis */
-    margin-bottom: 10px; /* Space below each heading */
-    text-transform: uppercase; /* Uppercase for consistency */
-    letter-spacing: 0.5px; /* Slight letter spacing */
+    font-size: 1.4rem;
+    color: #ffd700 !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Footer Info and Box */
 .footer-info, .footer-box {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background */
-    border-radius: 5px; /* Rounded corners */
-    padding: 12px; /* Padding for a balanced look */
-    margin-bottom: 15px; /* Space between sections */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 15px;
 }
 
-/* Footer Info Items */
+/* Animation Definition */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initially hidden state */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animation classes with staggered delays */
+.fade-in-1 {
+    animation: fadeInUp 0.8s ease forwards 0.1s;
+}
+.fade-in-2 {
+    animation: fadeInUp 0.8s ease forwards 0.3s;
+}
+.fade-in-3 {
+    animation: fadeInUp 0.8s ease forwards 0.5s;
+}
+.fade-in-4 {
+    animation: fadeInUp 0.8s ease forwards 0.7s;
+}
+
+/* Signup Button Styles */
+.btn-signup {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #aa00cc;
+}
+
+/* Icon and Text Styling */
 .footer-info-item {
-    display: flex; /* Flexbox for alignment */
-    align-items: flex-start; /* Align vertically */
-    margin-bottom: 15px; /* Space between items */
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
 }
 
 .footer-info-item i {
-    color: #007bff; /* Icon color */
-    font-size: 1.2em; /* Icon size */
-    margin-right: 8px; /* Space between icon and text */
+    color: #00ff37;
+    font-size: 1.2em;
+    margin-right: 10px;
+    margin-top: 4px;
 }
 
 .footer-info-item span,
 .footer-info p,
 .footer-box p {
-    font-size: 1rem; /* Font size for content */
-    color: #ffffff; /* White color for content text */
-}
-
-/* Links */
-.btn-link {
-    color: #ddd; /* Link color */
-    text-decoration: none; /* No underline */
-    margin-bottom: 0.2rem; /* Spacing between links */
-}
-
-.btn-link:hover {
-    color: #fff; /* Color change on hover */
-    text-decoration: underline; /* Underline effect on hover */
-}
-
-/* Button Styles */
-.btn.btn-square {
-    width: 30px; /* Icon size */
-    height: 30px; /* Icon height */
-    margin-right: 5px; /* Margin to the right */
-}
-
-.btn-signup {
-    background-color: #ff0000; /* Red background */
-    color: #fff; /* White text */
-    padding: 10px 15px; /* Button padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    font-size: 1rem; /* Font size */
-    width: 100%; /* Full width */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.btn-signup:hover {
-    background-color: #aa00cc; /* Darker red on hover */
-}
-
-/* Address Text */
-.address-text {
-    font-size: 16px;
-    color: #f8f9fa; /* Light text color */
-    line-height: 1.5;
-    margin-left: 10px; /* Adds space between the icon and text */
-    word-wrap: break-word; /* Ensure long words break and wrap properly */
-    white-space: normal; /* Allow text to wrap properly */
-    display: inline-block; /* Ensure the text starts from the same line as the icon */
-}
-
-/* Media Queries */
-@media (max-width: 767px) {
-    .address-text {
-        white-space: normal; /* Allow text to wrap on smaller screens */
-    }
+    font-size: 1rem;
+    color: #ffffff;
+    word-break: break-word;
 }

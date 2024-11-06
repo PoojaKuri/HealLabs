@@ -106,3 +106,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     // Initialize the function when the page loads
     window.addEventListener('load', revealTestimonialCards);
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".footer-info.hidden, .footer-box.hidden");
+        elements.forEach((el) => {
+            el.classList.remove("hidden");
+        });
+    });

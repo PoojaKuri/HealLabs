@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <!-- Announcement Bar -->
@@ -27,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto link-color">
                 <li class="nav-item"><a class="nav-link" href="healab.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="healab.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
@@ -1107,23 +1108,71 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer text-center py-4">
-        <p>&copy; 2024 HealLabs. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="https://www.youtube.com" target="_blank" class="text-white mx-2">
-                <i class="fab fa-youtube fa-lg"></i>
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
-                <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
-                <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            <a href="mailto:your-email@example.com" class="text-white mx-2">
-                <i class="fas fa-envelope fa-lg"></i>
-            </a>
-        </div>
-    </footer>
+    <footer class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5 navback">
+          <div class="row g-5">
+              <!-- Our Hospital Section -->
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="heading text-light">Our Hospital</h4>
+                  <div class="footer-info">
+                      <div class="footer-info-item d-flex align-items-start mb-1">
+                          <i class="fa fa-map-marker-alt footcollor me-2"></i>
+                          <span class="text-light">Shree Laxmi Newas, Near Mahaveer Garden, Opp Pendharkar Dalan, Kolhapur, 416001</span>
+                      </div>
+                      <div class="footer-info-item d-flex align-items-start mb-1">
+                          <i class="fa fa-phone-alt footcollor me-2"></i>
+                          <span class="text-light">0231-265 4192</span>
+                      </div>
+                      <div class="footer-info-item d-flex align-items-start mb-1">
+                          <i class="fa fa-mobile footcollor me-2" aria-hidden="true"></i>
+                          <span class="text-light">+91 9146479292</span>
+                      </div>
+                      <div class="footer-info-item d-flex align-items-start mb-1">
+                          <i class="fa fa-envelope footcollor me-2"></i>
+                          <span class="text-light">prakruticchikitsa@gmail.com</span>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Quick Links Section -->
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="heading text-light">Quick Links</h4>
+                  <div class="footer-box">
+                      <div class="d-flex flex-column">
+                          <a class="btn btn-link text-light" href="aboutus.html">About Us</a>
+                          <a class="btn btn-link text-light" href="contact.html">Contact Us</a>
+                          <a class="btn btn-link text-light" href="products.html">Our Specialty</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Open Hours Section -->
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="heading text-light">Open Hours</h4>
+                  <div class="footer-box">
+                      <div class="d-flex flex-column">
+                          <p class="text-light mb-1">Mon - Fri: <span class="text-light">09:00 am - 07:00 pm</span></p>
+                          <p class="text-light mb-1">Sat: <span class="text-light">09:00 am - 12:00 pm</span></p>
+                          <p class="text-light mb-1">Sun: <span class="text-light">Closed</span></p>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Appointment Section -->
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="heading text-light">Appointment</h4>
+                  <div class="footer-box">
+                      <p class="text-light">Easy online booking from anywhere, anytime.</p>
+                      <div class="position-relative w-100">
+                          <input class="form-control w-100 py-3 ps-4" type="text" placeholder="Your email" name="Texts">
+                      </div>
+                      <button type="button" class="btn btn-signup mt-2 w-100">Sign Up</button>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

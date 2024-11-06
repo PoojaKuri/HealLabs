@@ -1,3 +1,4 @@
+/* Footer Styles */
 .footer {
     background-color: #003366; /* Dark background for footer */
     padding: 15px 0; /* Adjusted padding */
@@ -12,6 +13,7 @@
     letter-spacing: 0.5px; /* Slight letter spacing */
 }
 
+/* Footer Info and Box */
 .footer-info, .footer-box {
     background-color: rgba(255, 255, 255, 0.1); /* Light background */
     border-radius: 5px; /* Rounded corners */
@@ -19,13 +21,15 @@
     margin-bottom: 15px; /* Space between sections */
 }
 
+/* Footer Info Items */
 .footer-info-item {
     display: flex; /* Flexbox for alignment */
-    align-items: center; /* Center vertically */
-    margin-bottom: 0.2rem; /* Space between items */
+    align-items: flex-start; /* Align vertically */
+    margin-bottom: 15px; /* Space between items */
 }
 
 .footer-info-item i {
+    color: #007bff; /* Icon color */
     font-size: 1.2em; /* Icon size */
     margin-right: 8px; /* Space between icon and text */
 }
@@ -37,6 +41,7 @@
     color: #ffffff; /* White color for content text */
 }
 
+/* Links */
 .btn-link {
     color: #ddd; /* Link color */
     text-decoration: none; /* No underline */
@@ -48,10 +53,11 @@
     text-decoration: underline; /* Underline effect on hover */
 }
 
+/* Button Styles */
 .btn.btn-square {
     width: 30px; /* Icon size */
     height: 30px; /* Icon height */
-    margin: 0 5px 0 0; /* Margin to the right */
+    margin-right: 5px; /* Margin to the right */
 }
 
 .btn-signup {
@@ -68,4 +74,22 @@
 
 .btn-signup:hover {
     background-color: #aa00cc; /* Darker red on hover */
+}
+
+/* Address Text */
+.address-text {
+    font-size: 16px;
+    color: #f8f9fa; /* Light text color */
+    line-height: 1.5;
+    margin-left: 10px; /* Adds space between the icon and text */
+    word-wrap: break-word; /* Ensure long words break and wrap properly */
+    white-space: normal; /* Allow text to wrap properly */
+    display: inline-block; /* Ensure the text starts from the same line as the icon */
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .address-text {
+        white-space: normal; /* Allow text to wrap on smaller screens */
+    }
 }

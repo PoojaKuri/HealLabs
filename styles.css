@@ -273,6 +273,7 @@ section.show {
 }
 
 .product-description p {
+    color: white;
     margin-top: 16px;
     font-size: 0.9rem;
 }

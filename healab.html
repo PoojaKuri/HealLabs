@@ -28,7 +28,7 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="#home">
+      <a id="navbar-logo" class="navbar-brand" href="#home">
         <img src="images/logo.png" alt="Heal Labs Logo" height="70" />
       </a>
       <button
@@ -39,6 +39,7 @@
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onclick="toggleLogo()"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,6 +60,7 @@
         </ul>
       </div>
     </nav>
+    
 
     <main>
       <!-- Contact Sidebar -->
@@ -172,6 +174,39 @@
               <div class="product-card">
                 <img
                   src="images/product-images/p17.jpg"
+                  alt="Product 17"
+                  class="img-fluid"
+                />
+                <h5 class="mt-2">HEALOFINAX-SP</h5>
+                <button
+                  onclick="showDescription('desc17')"
+                  class="btn btn-primary btn-sm mt-2"
+                >
+                  Description
+                </button>
+                <div class="product-description" id="desc17">
+                  <button
+                    onclick="hideDescription('desc17')"
+                    class="close-button"
+                  >
+                    &times;
+                  </button>
+                  <p class="small">
+                    Healofinac-SP combines Aceclofenac, Paracetamol, and
+                    Serratiopeptidase to repair tissues and reduce inflammation.
+                    Aceclofenac supports cartilage health, Paracetamol provides
+                    pain relief, and Serratiopeptidase reduces swelling and
+                    improves micro-circulation for faster healing, ideal for
+                    conditions like dental pain, rheumatoid arthritis, and
+                    postoperative pain.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img
+                  src="images/product-images/p18.jpg"
                   alt="Product 18"
                   class="img-fluid"
                 />
@@ -202,6 +237,9 @@
                 </div>
               </div>
             </div>
+
+            <!-- Row 8 -->
+
             <div class="col-md-4 col-sm-6 mb-4">
               <div class="product-card">
                 <img
@@ -224,18 +262,22 @@
                     &times;
                   </button>
                   <p class="small">
-                    HEALOCEF-50 Dry Syrup is an antibiotic used to treat a
-                    variety of bacterial infections in children. It contains
-                    Cefuroxime, a cephalosporin antibiotic, which works by
-                    inhibiting bacterial growth. HEALOCEF-50 is effective for
-                    treating respiratory infections, ear infections, skin
-                    infections, and urinary tract infections. It helps reduce
-                    fever, pain, and inflammation associated with bacterial
-                    infections.
+                    MORBEHEAL DDS features Amoxycillin + Potassium Clavulanate
+                    Oral Suspension (457 mg) and is highly effective against
+                    strains of Haemophilus influenzae. It is specifically
+                    recommended for treating infections such as ENT,
+                    respiratory, urinary tract, skin and soft tissue, dental,
+                    and bone and joint infections. The medicine is backed by
+                    clinical evidence, establishing it as a credible antibiotic
+                    option for pediatric patients.
                   </p>
                 </div>
               </div>
             </div>
+
+          </div>
+
+          <div class="row">
             <div class="col-md-4 col-sm-6 mb-4">
               <div class="product-card">
                 <img
@@ -258,21 +300,18 @@
                     &times;
                   </button>
                   <p class="small">
-                    CEPHOPOD-CV 50 DRY SYRUP ChatGPT said: ChatGPT CEPHOPOD-CV
-                    50 Dry Syrup is an antibiotic used to treat a wide range of
-                    bacterial infections in children. It contains Cefpodoxime, a
-                    broad-spectrum antibiotic, and Clavulanic Acid, which
-                    enhances the effectiveness of Cefpodoxime by preventing
-                    bacterial resistance. This syrup is commonly prescribed for
-                    respiratory infections, urinary tract infections, skin
-                    infections, and ear infections.
+                    MONTOHEAL-LC, a combination of Montelukast Sodium and
+                    Levocetirizine Hydrochloride, is a broad-spectrum
+                    anti-allergy solution. Levocetirizine relieves nasal
+                    congestion, while Montelukast reduces inflammation. It
+                    provides bronchodilation within two hours, easing symptoms
+                    like coughing and wheezing. It is ideal for managing
+                    seasonal or perennial allergic rhinitis, mild to moderate
+                    asthma, and nasal congestion.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="row">
             <div class="col-md-4 col-sm-6 mb-4">
               <div class="product-card">
                 <img
@@ -280,7 +319,7 @@
                   alt="Product 21"
                   class="img-fluid"
                 />
-                <h5 class="mt-2">ASCOLAB-DX</h5>
+                <h5 class="mt-2">MORBEHEAL-CV 625</h5>
                 <button
                   onclick="showDescription('desc21')"
                   class="btn btn-primary btn-sm mt-2"
@@ -295,19 +334,13 @@
                     &times;
                   </button>
                   <p class="small">
-                    ASCOLAB-DX ChatGPT said: ChatGPT ASCOLAB-DX Syrup is a
-                    medication used to treat cough and respiratory symptoms in
-                    children. It combines Ambroxol (a mucolytic agent) and
-                    Dextromethorphan (a cough suppressant), making it effective
-                    for both dry and productive coughs. ASCOLAB-DX helps loosen
-                    mucus, easing congestion and coughing, while also soothing
-                    the throat and reducing coughing reflex. It provides relief
-                    from symptoms associated with colds, flu, and other
-                    respiratory infections.
+                    MORBEHEAL-CV 625 Tablet is used for the treatment of various bacterial infections such as infection of lungs, airways, ears, urinary tract, skin, bone, joints, soft tissue and tooth. It is a combination medicine containing amoxicillin and clavulanic acid, which belongs to the class of antibiotics.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Row 9 -->
             <div class="col-md-4 col-sm-6 mb-4">
               <div class="product-card">
                 <img
@@ -341,40 +374,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="col-md-4 col-sm-6 mb-4">
-              <div class="product-card">
-                <img
-                  src="images/product-images/p23.jpg"
-                  alt="Product 23"
-                  class="img-fluid"
-                />
-                <h5 class="mt-2">COLDEHEAL SYRUP</h5>
-                <button
-                  onclick="showDescription('desc23')"
-                  class="btn btn-primary btn-sm mt-2"
-                >
-                  Description
-                </button>
-                <div class="product-description" id="desc23">
-                  <button
-                    onclick="hideDescription('desc23')"
-                    class="close-button"
-                  >
-                    &times;
-                  </button>
-                  <p class="small">
-                    FEBRIHEAL-250 Suspension is an antipyretic and analgesic
-                    medication used to reduce fever and relieve mild to moderate
-                    pain in children. It contains Paracetamol (Acetaminophen),
-                    which works by lowering the body’s temperature and
-                    alleviating discomfort caused by conditions like colds, flu,
-                    and other infections. This suspension is easy to administer
-                    and provides quick relief from symptoms such as fever,
-                    headaches, and body aches.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
           <!-- More Products Button -->

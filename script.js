@@ -82,35 +82,48 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-    // Function to handle the reveal of testimonial cards when they enter the viewport
-    function revealTestimonialCards() {
-        const testimonials = document.querySelectorAll('.testimonial-card');
+// Function to handle the reveal of testimonial cards when they enter the viewport
+function revealTestimonialCards() {
+    const testimonials = document.querySelectorAll('.testimonial-card');
 
-        // Create an IntersectionObserver to detect when testimonial cards are in view
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Add the 'visible' class to the card to trigger the animation
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing after animation
-                }
-            });
-        }, {
-            threshold: 0.2 // Trigger when 20% of the element is in view
+    // Create an IntersectionObserver to detect when testimonial cards are in view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the 'visible' class to the card to trigger the animation
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing after animation
+            }
         });
-
-        testimonials.forEach(card => {
-            observer.observe(card); // Observe each testimonial card
-        });
-    }
-
-    // Initialize the function when the page loads
-    window.addEventListener('load', revealTestimonialCards);
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const elements = document.querySelectorAll(".footer-info.hidden, .footer-box.hidden");
-        elements.forEach((el) => {
-            el.classList.remove("hidden");
-        });
+    }, {
+        threshold: 0.2 // Trigger when 20% of the element is in view
     });
+
+    testimonials.forEach(card => {
+        observer.observe(card); // Observe each testimonial card
+    });
+}
+
+// Initialize the function when the page loads
+window.addEventListener('load', revealTestimonialCards);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".footer-info.hidden, .footer-box.hidden");
+    elements.forEach((el) => {
+        el.classList.remove("hidden");
+    });
+});
+
+function toggleLogo() {
+const logo = document.getElementById("navbar-logo");
+const navbarCollapse = document.getElementById("navbarNav");
+
+// Check if navbar is collapsed (not visible)
+if (navbarCollapse.classList.contains("show")) {
+    logo.style.display = "block"; // Show the logo when menu is collapsed
+} else {
+    logo.style.display = "none"; // Hide the logo when menu is expanded
+}
+}
+

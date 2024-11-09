@@ -143,7 +143,7 @@
             <!-- Left Column: Contact Form Section -->
             <div class="col-lg-6 col-md-6">
               <h2 class="mb-4">Inquire Now</h2>
-              <form action="http://localhost:3000/submitt" method="POST">
+              <form action="http://localhost:3000/submitContact" method="POST">
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input
@@ -281,24 +281,27 @@
 
           <!-- Appointment Section -->
           <div class="col-lg-3 col-md-6">
-            <h4 class="heading text-light">Appointment</h4>
+            <h4 class="heading text-light">Newsletter</h4>
             <div class="footer-box hidden fade-in-4">
               <p class="text-light">
-                Easy online booking from anywhere, anytime.
+                Sign up for the latest updates and offers.
               </p>
-              <div class="position-relative w-100">
-                <input
-                  class="form-control w-100 py-3 ps-4"
-                  type="text"
-                  placeholder="Your email"
-                  name="Texts"
-                />
-              </div>
-              <button type="button" class="btn btn-signup mt-2 w-100">
-                Sign Up
-              </button>
+              <form action="http://localhost:3000/signupNewsletter" method="POST">
+                <div class="position-relative w-100">
+                  <input
+                    class="form-control w-100 py-3 ps-4"
+                    type="email"
+                    placeholder="Your email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-signup mt-2 w-100">
+                  Sign Up
+                </button>
+              </form>
             </div>
-          </div>
+          </div>          
         </div>
       </div>
       <div class="text-center text-light mt-4" style="font-size: 1.25rem">

@@ -1,15 +1,20 @@
--- Create the database
-CREATE DATABASE contact_form_db;
+-- Create Database
+CREATE DATABASE IF NOT EXISTS customerInfo;
+USE customerInfo;
 
--- Use the database
-USE contact_form_db;
-
--- Create the table to store contact form submissions
-CREATE TABLE inquiries (
+-- Table for Newsletter Subscribers
+CREATE TABLE IF NOT EXISTS newsletter_subscribers (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    signup_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Table for Contact Form Inquiries
+CREATE TABLE IF NOT EXISTS contact_inquiries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    phone VARCHAR(50) NOT NULL,
-    message TEXT NOT NULL,
-    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    phone VARCHAR(20),
+    message TEXT,
+    inquiry_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

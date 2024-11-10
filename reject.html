@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission Rejected</title>
+    <link rel="stylesheet" href="success-rejected.css">
+</head>
+<body>
+    <div id="error-container">
+        <div id="error-message">There was an issue with your submission. Please try again.</div>
+        <a href="javascript:window.history.back()" id="back-button">Go Back</a>
+    </div>
+
+    <script>
+        // Retrieve error parameter from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        
+        // Set specific messages based on the error parameter
+        let message;
+        if (error === "duplicate") {
+            message = "The email you entered is already subscribed or used.";
+        } else if (error === "invalid_email") {
+            message = "The email format is invalid. Please enter a valid email address.";
+        } else {
+            message = "There was an issue with your submission. Please try again.";
+        }
+
+        // Display the message on the page
+        document.getElementById("error-message").textContent = message;
+
+        // Redirect back to the home page after 3 seconds if the user does not navigate back
+        setTimeout(() => window.location.href = "healab.html", 10000);
+    </script>
+</body>
+</html>

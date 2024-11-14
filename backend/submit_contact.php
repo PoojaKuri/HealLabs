@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt->bind_param("ssss", $name, $email, $phone, $message);
 
             if ($stmt->execute()) {
-                header("Location: ../success.html");
+                header("Location: ../frontend/html/success.html");
                 exit();
             }
             $stmt->close();
@@ -25,11 +25,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             } else {
                 $error = urlencode("An error occurred. Please try again.");
             }
-            header("Location: ../reject.html?error=$error");
+            header("Location: ../frontend/html/reject.html?error=$error");
             exit();
         }
     } else {
-        header("Location: ../reject.html?error=" . urlencode("invalid_email"));
+        header("Location: ../frontend/html/reject.html?error=" . urlencode("invalid_email"));
         exit();
     }
 }

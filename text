@@ -20,3 +20,11 @@ CREATE TABLE IF NOT EXISTS contact_inquiries (
     message TEXT,
     inquiry_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+SELECT * FROM contact_inquiries;
+SELECT * FROM newsletter_subscribers;
+
+
+TRUNCATE TABLE newsletter_subscribers;
+TRUNCATE TABLE contact_inquiries;

@@ -1,0 +1,273 @@
+/* General Styles */
+body,
+html {
+  font-family: Arial, sans-serif;
+  background-color: #f4f9ff;
+  color: #333;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: #0d3b67;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1200;
+}
+
+.announcement-bar p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  margin-top: 56px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Section Headings */
+h2 {
+  font-weight: bold;
+  color: #003366;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e60000;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #ea1212;
+  border-color: #000000;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0a9eef;
+  transform: scale(1.05);
+}
+
+/* Scroll-based Animations */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated Text */
+.animated-text {
+  animation: colorChange 3s ease-in-out infinite, zoomSlide 1.5s ease forwards;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Sidebar */
+.contact-sidebar {
+  position: fixed;
+  top: 70%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.contact-icon {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  width: 50px;
+  background: #333;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: translateX(10px);
+  background-color: #0055a5;
+}
+
+.whatsapp-icon {
+  background-color: #3a7bd5;
+}
+
+.phone-icon {
+  background-color: #3b5998;
+}
+
+.email-icon {
+  background-color: #3a7bd5;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff6666;
+  }
+  25% {
+    color: #66ccff;
+  }
+  50% {
+    color: #66ff66;
+  }
+  75% {
+    color: #ffcc66;
+  }
+  100% {
+    color: #ff6666;
+  }
+}
+
+@keyframes zoomSlide {
+  0% {
+    transform: scale(1) translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  .product-card img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .product-card img {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card img {
+    max-width: 80%;
+  }
+}
+
+/* Page Title Section Styling */
+.page-title-section {
+  background-image: url("../../images/title-image.jpeg"); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #060000;
+  text-align: center;
+  padding: 180px 0 100px; /* Increased top padding to account for fixed navbar */
+  margin-top: 62px; /* Compensate for the fixed navbar height */
+  width: 100vw;
+  min-height: 400px;
+  box-sizing: border-box;
+  opacity: 0; /* Start hidden for animation */
+  animation: fadeInZoom 2s ease-out forwards; /* Trigger fade-in and zoom animation */
+}
+
+/* Availability Section */
+.availability-section {
+  padding-top: 20px; /* Reduced to align with title section */
+  margin-top: -40px; /* Reduced margin between sections */
+}
+
+/* Slide-Down Animation for Title Text */
+@keyframes slideDownFromTop {
+  0% {
+    transform: translateY(-100px); /* Start from above */
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(20px); /* Brief bounce effect */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1;
+  }
+}
+
+/* Fade-In and Zoom Animation for Background */
+@keyframes fadeInZoom {
+  0% {
+    transform: scale(1.1); /* Start slightly zoomed in */
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1); /* Settle at normal size */
+    opacity: 1;
+  }
+}
+
+/* Page Title Text Styling */
+.page-title {
+  font-size: 48px;
+  font-weight: bold;
+  opacity: 0; /* Start hidden for animation */
+  animation: slideDownFromTop 1.5s ease-out forwards; /* Trigger animation */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
